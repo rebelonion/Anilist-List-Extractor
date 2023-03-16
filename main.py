@@ -32,7 +32,7 @@ def add_double_quote(s):
 def pulldata(_username):
     with open('anime_list.csv', 'w', newline='', encoding='utf-8-sig') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(["Link", "Romaji", "Format", "Genres", "Status", "Progress/Episodes", "Score"])
+        writer.writerow(["Link", "Romaji", "Format", "Status", "Progress/Episodes", "Genres", "Score"])
     for i in range(0, 5):
         # GraphQL query to retrieve user's list
         query = """
